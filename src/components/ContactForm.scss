@@ -1,0 +1,55 @@
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+    }
+  }
+
+  button {
+    background: #007bff;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+
+    &:hover {
+      background: #0056b3;
+    }
+
+    &:disabled {
+      background: #6c757d;
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
+
+  .form-status {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+    &.success {
+      color: #28a745; // سبز موفقیت
+    }
+
+    &.error {
+      color: #dc3545; // قرمز خطا
+    }
+  }
+}

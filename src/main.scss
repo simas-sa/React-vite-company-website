@@ -1,0 +1,100 @@
+// 🎨 متغیرها
+
+
+@use "sass:color";
+
+
+$light-bg: #f9f9f9;
+$dark-bg: #121212;
+$light-text: #222;
+$dark-text: #f1f1f1;
+$primary: #0077ff;
+
+// 🎨 حالت کلی اپ
+.app {
+  font-family: 'IRANSans', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.light {
+  background-color: $light-bg;
+  color: $light-text;
+}
+
+.dark {
+  background-color: $dark-bg;
+  color: $dark-text;
+}
+
+.about {
+  background: #fff;
+  padding: 4rem 2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-radius: 12px;
+}
+
+// 🎨 دکمه اصلی
+.btn-primary {
+  background-color: $primary;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+
+  &:hover {
+    background-color: color.adjust($primary, $lightness: -10%);
+  }
+}
+
+// 🎨 Hero Section
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #f9f9fb 0%, #eaeaea 100%);
+  padding: 6rem 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-radius: 16px;
+
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: $primary;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: color.scale($primary, $lightness: -10%);
+      }
+    .img {
+      display: block;
+    }  
+    }
+  }
+}
+
+.value-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+}
