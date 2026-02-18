@@ -27,4 +27,4 @@ Follow the steps below to run the project locally:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/simas-sa/react-vite-company.git
+git clone https://github.com/simas-sa/react-vite-company-website.git
